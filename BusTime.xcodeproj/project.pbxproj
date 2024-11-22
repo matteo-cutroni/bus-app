@@ -6,6 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		977740672CEFE3CB00DE8BFD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977740662CEFE3CB00DE8BFD /* WidgetKit.framework */; };
+		977740692CEFE3CB00DE8BFD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977740682CEFE3CB00DE8BFD /* SwiftUI.framework */; };
+		977740782CEFE3CC00DE8BFD /* BusTimeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 977740642CEFE3CB00DE8BFD /* BusTimeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		977740802CEFEA2200DE8BFD /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 9777407F2CEFEA2200DE8BFD /* SwiftProtobuf */; };
+		977740822CEFEA2200DE8BFD /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 977740812CEFEA2200DE8BFD /* SwiftProtobufPluginLibrary */; };
+		977740842CEFEA2200DE8BFD /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 977740832CEFEA2200DE8BFD /* protoc-gen-swift */; };
+		977740862CEFEB0C00DE8BFD /* gtfs-realtime.proto in Sources */ = {isa = PBXBuildFile; fileRef = 977740852CEFEB0C00DE8BFD /* gtfs-realtime.proto */; };
+		9777408B2CEFEF4B00DE8BFD /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 9777408A2CEFEF4B00DE8BFD /* SwiftProtobuf */; };
+		9777408D2CEFEF4B00DE8BFD /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 9777408C2CEFEF4B00DE8BFD /* SwiftProtobufPluginLibrary */; };
+		9777408F2CEFEF4B00DE8BFD /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 9777408E2CEFEF4B00DE8BFD /* protoc-gen-swift */; };
+		977740932CEFF37F00DE8BFD /* GtfsRealtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977740922CEFF37F00DE8BFD /* GtfsRealtime.swift */; };
+		977740942CEFF37F00DE8BFD /* GtfsRealtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977740922CEFF37F00DE8BFD /* GtfsRealtime.swift */; };
+		977740962CEFF6A100DE8BFD /* rome_trip_updates.pb in Resources */ = {isa = PBXBuildFile; fileRef = 977740952CEFF6A100DE8BFD /* rome_trip_updates.pb */; };
+		977740972CEFF6A100DE8BFD /* rome_trip_updates.pb in Resources */ = {isa = PBXBuildFile; fileRef = 977740952CEFF6A100DE8BFD /* rome_trip_updates.pb */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		977740442CEFE2DA00DE8BFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +38,50 @@
 			remoteGlobalIDString = 977740312CEFE2D900DE8BFD;
 			remoteInfo = BusTime;
 		};
+		977740762CEFE3CC00DE8BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9777402A2CEFE2D900DE8BFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 977740632CEFE3CB00DE8BFD;
+			remoteInfo = BusTimeWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9777407D2CEFE3CC00DE8BFD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				977740782CEFE3CC00DE8BFD /* BusTimeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		977740322CEFE2D900DE8BFD /* BusTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		977740432CEFE2DA00DE8BFD /* BusTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9777404D2CEFE2DA00DE8BFD /* BusTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		977740642CEFE3CB00DE8BFD /* BusTimeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusTimeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		977740662CEFE3CB00DE8BFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		977740682CEFE3CB00DE8BFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		977740852CEFEB0C00DE8BFD /* gtfs-realtime.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = "gtfs-realtime.proto"; sourceTree = "<group>"; };
+		977740922CEFF37F00DE8BFD /* GtfsRealtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GtfsRealtime.swift; sourceTree = "<group>"; };
+		977740952CEFF6A100DE8BFD /* rome_trip_updates.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = rome_trip_updates.pb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		977740792CEFE3CC00DE8BFD /* Exceptions for "BusTimeWidget" folder in "BusTimeWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 977740632CEFE3CB00DE8BFD /* BusTimeWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		977740342CEFE2D900DE8BFD /* BusTime */ = {
@@ -45,6 +99,14 @@
 			path = BusTimeUITests;
 			sourceTree = "<group>";
 		};
+		9777406A2CEFE3CB00DE8BFD /* BusTimeWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				977740792CEFE3CC00DE8BFD /* Exceptions for "BusTimeWidget" folder in "BusTimeWidgetExtension" target */,
+			);
+			path = BusTimeWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +114,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977740822CEFEA2200DE8BFD /* SwiftProtobufPluginLibrary in Frameworks */,
+				977740802CEFEA2200DE8BFD /* SwiftProtobuf in Frameworks */,
+				977740842CEFEA2200DE8BFD /* protoc-gen-swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,15 +134,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		977740612CEFE3CB00DE8BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9777408F2CEFEF4B00DE8BFD /* protoc-gen-swift in Frameworks */,
+				9777408D2CEFEF4B00DE8BFD /* SwiftProtobufPluginLibrary in Frameworks */,
+				977740692CEFE3CB00DE8BFD /* SwiftUI.framework in Frameworks */,
+				977740672CEFE3CB00DE8BFD /* WidgetKit.framework in Frameworks */,
+				9777408B2CEFEF4B00DE8BFD /* SwiftProtobuf in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		977740292CEFE2D900DE8BFD = {
 			isa = PBXGroup;
 			children = (
+				977740952CEFF6A100DE8BFD /* rome_trip_updates.pb */,
+				977740922CEFF37F00DE8BFD /* GtfsRealtime.swift */,
+				977740852CEFEB0C00DE8BFD /* gtfs-realtime.proto */,
 				977740342CEFE2D900DE8BFD /* BusTime */,
 				977740462CEFE2DA00DE8BFD /* BusTimeTests */,
 				977740502CEFE2DA00DE8BFD /* BusTimeUITests */,
+				9777406A2CEFE3CB00DE8BFD /* BusTimeWidget */,
+				977740652CEFE3CB00DE8BFD /* Frameworks */,
 				977740332CEFE2D900DE8BFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +170,18 @@
 				977740322CEFE2D900DE8BFD /* BusTime.app */,
 				977740432CEFE2DA00DE8BFD /* BusTimeTests.xctest */,
 				9777404D2CEFE2DA00DE8BFD /* BusTimeUITests.xctest */,
+				977740642CEFE3CB00DE8BFD /* BusTimeWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		977740652CEFE3CB00DE8BFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				977740662CEFE3CB00DE8BFD /* WidgetKit.framework */,
+				977740682CEFE3CB00DE8BFD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,16 +194,21 @@
 				9777402E2CEFE2D900DE8BFD /* Sources */,
 				9777402F2CEFE2D900DE8BFD /* Frameworks */,
 				977740302CEFE2D900DE8BFD /* Resources */,
+				9777407D2CEFE3CC00DE8BFD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				977740772CEFE3CC00DE8BFD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				977740342CEFE2D900DE8BFD /* BusTime */,
 			);
 			name = BusTime;
 			packageProductDependencies = (
+				9777407F2CEFEA2200DE8BFD /* SwiftProtobuf */,
+				977740812CEFEA2200DE8BFD /* SwiftProtobufPluginLibrary */,
+				977740832CEFEA2200DE8BFD /* protoc-gen-swift */,
 			);
 			productName = BusTime;
 			productReference = 977740322CEFE2D900DE8BFD /* BusTime.app */;
@@ -163,6 +260,31 @@
 			productReference = 9777404D2CEFE2DA00DE8BFD /* BusTimeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		977740632CEFE3CB00DE8BFD /* BusTimeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9777407A2CEFE3CC00DE8BFD /* Build configuration list for PBXNativeTarget "BusTimeWidgetExtension" */;
+			buildPhases = (
+				977740602CEFE3CB00DE8BFD /* Sources */,
+				977740612CEFE3CB00DE8BFD /* Frameworks */,
+				977740622CEFE3CB00DE8BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9777406A2CEFE3CB00DE8BFD /* BusTimeWidget */,
+			);
+			name = BusTimeWidgetExtension;
+			packageProductDependencies = (
+				9777408A2CEFEF4B00DE8BFD /* SwiftProtobuf */,
+				9777408C2CEFEF4B00DE8BFD /* SwiftProtobufPluginLibrary */,
+				9777408E2CEFEF4B00DE8BFD /* protoc-gen-swift */,
+			);
+			productName = BusTimeWidgetExtension;
+			productReference = 977740642CEFE3CB00DE8BFD /* BusTimeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +306,9 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = 977740312CEFE2D900DE8BFD;
 					};
+					977740632CEFE3CB00DE8BFD = {
+						CreatedOnToolsVersion = 16.1;
+					};
 				};
 			};
 			buildConfigurationList = 9777402D2CEFE2D900DE8BFD /* Build configuration list for PBXProject "BusTime" */;
@@ -195,6 +320,9 @@
 			);
 			mainGroup = 977740292CEFE2D900DE8BFD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9777407E2CEFEA2200DE8BFD /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 977740332CEFE2D900DE8BFD /* Products */;
 			projectDirPath = "";
@@ -203,6 +331,7 @@
 				977740312CEFE2D900DE8BFD /* BusTime */,
 				977740422CEFE2DA00DE8BFD /* BusTimeTests */,
 				9777404C2CEFE2DA00DE8BFD /* BusTimeUITests */,
+				977740632CEFE3CB00DE8BFD /* BusTimeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977740962CEFF6A100DE8BFD /* rome_trip_updates.pb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +359,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		977740622CEFE3CB00DE8BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977740972CEFF6A100DE8BFD /* rome_trip_updates.pb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -236,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977740932CEFF37F00DE8BFD /* GtfsRealtime.swift in Sources */,
+				977740862CEFEB0C00DE8BFD /* gtfs-realtime.proto in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +393,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		977740602CEFE3CB00DE8BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977740942CEFF37F00DE8BFD /* GtfsRealtime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +413,11 @@
 			isa = PBXTargetDependency;
 			target = 977740312CEFE2D900DE8BFD /* BusTime */;
 			targetProxy = 9777404E2CEFE2DA00DE8BFD /* PBXContainerItemProxy */;
+		};
+		977740772CEFE3CC00DE8BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 977740632CEFE3CB00DE8BFD /* BusTimeWidgetExtension */;
+			targetProxy = 977740762CEFE3CC00DE8BFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -551,6 +704,65 @@
 			};
 			name = Release;
 		};
+		9777407B2CEFE3CC00DE8BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R87D34GC28;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusTimeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BusTimeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "su-kha.BusTime.BusTimeWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9777407C2CEFE3CC00DE8BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R87D34GC28;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusTimeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BusTimeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "su-kha.BusTime.BusTimeWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,7 +802,60 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9777407A2CEFE3CC00DE8BFD /* Build configuration list for PBXNativeTarget "BusTimeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9777407B2CEFE3CC00DE8BFD /* Debug */,
+				9777407C2CEFE3CC00DE8BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9777407E2CEFEA2200DE8BFD /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.28.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9777407F2CEFEA2200DE8BFD /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9777407E2CEFEA2200DE8BFD /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		977740812CEFEA2200DE8BFD /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9777407E2CEFEA2200DE8BFD /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		977740832CEFEA2200DE8BFD /* protoc-gen-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9777407E2CEFEA2200DE8BFD /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = "protoc-gen-swift";
+		};
+		9777408A2CEFEF4B00DE8BFD /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9777407E2CEFEA2200DE8BFD /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		9777408C2CEFEF4B00DE8BFD /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9777407E2CEFEA2200DE8BFD /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		9777408E2CEFEF4B00DE8BFD /* protoc-gen-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9777407E2CEFEA2200DE8BFD /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = "protoc-gen-swift";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9777402A2CEFE2D900DE8BFD /* Project object */;
 }
